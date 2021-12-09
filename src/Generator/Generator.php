@@ -44,9 +44,14 @@ final class Generator
         $dayFolder = $this->getDayFolder($season, $dayNumber);
 
         $inputFile = $dayFolder . '/input.txt';
+        $testInputFile = $dayFolder . '/testInput.txt';
 
         if (!is_file($inputFile)) {
             FileSystem::write($inputFile, '');
+        }
+
+        if (!is_file($testInputFile)) {
+            FileSystem::write($testInputFile, '');
         }
     }
 

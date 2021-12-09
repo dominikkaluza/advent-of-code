@@ -2,14 +2,14 @@
 
 namespace AdventOfCode\Season{{season}}\Day{{dayNumber}};
 
+use AdventOfCode\LinesInput;
 use AdventOfCode\PuzzleSolution;
 use AdventOfCode\Result;
-use LogicException;
 
 final class PuzzleSolution{{part}}Part implements PuzzleSolution
 {
     public function getResult(): Result
     {
-		throw new LogicException('Not implemented');
+		$input = new LinesInput(__DIR__ . '/testInput.txt');
     }
 }

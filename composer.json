@@ -1,7 +1,7 @@
 {
   "name": "dominikvoda/advent-of-code-2017",
   "description": "",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "proprietary",
   "authors": [
     {
@@ -12,11 +12,28 @@
   "require": {
     "symfony/console": "^5.0",
     "nette/utils": "^3.2",
-    "doctrine/collections": "^1.6"
+    "doctrine/collections": "^1.6",
+    "oscarpascualbakker/priority-queue": "dev-master",
+    "nicmart/tree": "dev-master"
   },
   "autoload": {
     "psr-4": {
       "AdventOfCode\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "oscarpascualbakker/priority-queue",
+        "version": "dev-master",
+        "type": "package",
+        "source": {
+          "url": "git@github.com:oscarpascualbakker/priority-queue.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ]
 }
